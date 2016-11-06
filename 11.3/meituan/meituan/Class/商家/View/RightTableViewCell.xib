@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="right" selectionStyle="default" indentationWidth="10" rowHeight="88" id="KGk-i7-Jjw" customClass="RightTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="404" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="404" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gesture_node_error" translatesAutoresizingMaskIntoConstraints="NO" id="OwP-IN-CMI">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="OE3-Qw-Zal"/>
+                            <constraint firstAttribute="width" constant="40" id="Vn5-zT-3uz"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9UK-37-Hsk">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwQ-Yg-gMk">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="93" id="EuX-ql-M0b"/>
+                            <constraint firstAttribute="height" constant="15" id="H5w-G2-SR0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_food_review_praise" translatesAutoresizingMaskIntoConstraints="NO" id="PXO-vS-H9f">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="Ygi-hX-h37"/>
+                            <constraint firstAttribute="height" constant="17" id="e9J-si-eHm"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fm-bR-v64">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="bXC-1I-BaQ"/>
+                            <constraint firstAttribute="width" constant="97" id="huu-g6-bHo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2N-Rg-qXU">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="61" id="aZj-Bv-tp2"/>
+                            <constraint firstAttribute="height" constant="21" id="zqa-FF-vDe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZPk-LA-VmH" customClass="RightCountView">
+                        <subviews>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LaR-1z-dXo" userLabel="减号">
+                                <state key="normal" image="icon_food_decrease_small"/>
+                                <state key="highlighted" image="icon_food_decrease_small_white_bg"/>
+                                <connections>
+                                    <action selector="minusClick:" destination="ZPk-LA-VmH" eventType="touchUpInside" id="DA8-Tc-fca"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSO-eJ-zwj" userLabel="加号">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="XiO-Jh-Aoa"/>
+                                    <constraint firstAttribute="height" constant="22" id="vHp-Ng-phv"/>
+                                </constraints>
+                                <state key="normal" image="icon_food_increase_small"/>
+                                <state key="selected" image="icon_food_increase_small_highlighted"/>
+                                <state key="highlighted" image="icon_food_increase_small_highlighted"/>
+                                <connections>
+                                    <action selector="plusClick:" destination="ZPk-LA-VmH" eventType="touchUpInside" id="6yV-QS-Ohx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ik-fe-FTF" userLabel="数量label">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="QYy-cM-dFN"/>
+                                    <constraint firstAttribute="width" constant="32" id="aVS-RH-Wkj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2666666667" green="0.87450980389999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eSO-eJ-zwj" secondAttribute="trailing" constant="8" id="D8Q-B7-AEt"/>
+                            <constraint firstItem="LaR-1z-dXo" firstAttribute="leading" secondItem="ZPk-LA-VmH" secondAttribute="leading" constant="8" id="ZZg-8d-Vdq"/>
+                            <constraint firstItem="LaR-1z-dXo" firstAttribute="top" secondItem="ZPk-LA-VmH" secondAttribute="top" constant="4" id="aZ7-Gf-A56"/>
+                            <constraint firstAttribute="height" constant="31" id="eR7-tw-SOZ"/>
+                            <constraint firstItem="2Ik-fe-FTF" firstAttribute="top" secondItem="ZPk-LA-VmH" secondAttribute="top" constant="4" id="hMR-9y-Jb6"/>
+                            <constraint firstAttribute="width" constant="146" id="oeI-PO-gld"/>
+                            <constraint firstItem="2Ik-fe-FTF" firstAttribute="leading" secondItem="LaR-1z-dXo" secondAttribute="trailing" constant="8" id="q0e-FR-O77"/>
+                            <constraint firstItem="eSO-eJ-zwj" firstAttribute="top" secondItem="ZPk-LA-VmH" secondAttribute="top" constant="4" id="rFl-Pp-GQp"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="countlable" destination="2Ik-fe-FTF" id="8pH-HX-IDi"/>
+                            <outlet property="minusBu" destination="LaR-1z-dXo" id="525-4v-d7l"/>
+                            <outlet property="plusBu" destination="eSO-eJ-zwj" id="W89-Lx-9HM"/>
+                        </connections>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5fm-bR-v64" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="43" id="4CR-Q6-2kB"/>
+                    <constraint firstItem="M2N-Rg-qXU" firstAttribute="leading" secondItem="PXO-vS-H9f" secondAttribute="trailing" constant="27" id="5VE-eU-7oE"/>
+                    <constraint firstItem="5fm-bR-v64" firstAttribute="top" secondItem="UwQ-Yg-gMk" secondAttribute="bottom" constant="8" id="H29-6H-ZNO"/>
+                    <constraint firstItem="UwQ-Yg-gMk" firstAttribute="leading" secondItem="OwP-IN-CMI" secondAttribute="trailing" constant="8" id="MmM-rM-GaS"/>
+                    <constraint firstItem="9UK-37-Hsk" firstAttribute="leading" secondItem="OwP-IN-CMI" secondAttribute="trailing" constant="8" id="NhU-GQ-7xU"/>
+                    <constraint firstItem="OwP-IN-CMI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="QCR-Hx-5Ij"/>
+                    <constraint firstItem="M2N-Rg-qXU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="S3K-gn-Rf0"/>
+                    <constraint firstAttribute="trailing" secondItem="ZPk-LA-VmH" secondAttribute="trailing" id="X3H-0v-77v"/>
+                    <constraint firstItem="ZPk-LA-VmH" firstAttribute="top" secondItem="M2N-Rg-qXU" secondAttribute="bottom" constant="12" id="XNS-iB-sI4"/>
+                    <constraint firstItem="OwP-IN-CMI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="a7C-vv-Od0"/>
+                    <constraint firstItem="PXO-vS-H9f" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="23" id="asX-Qv-JQf"/>
+                    <constraint firstAttribute="trailing" secondItem="PXO-vS-H9f" secondAttribute="trailing" constant="216" id="dx5-Rh-YzR"/>
+                    <constraint firstItem="9UK-37-Hsk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="gzH-J1-AD8"/>
+                    <constraint firstItem="UwQ-Yg-gMk" firstAttribute="top" secondItem="9UK-37-Hsk" secondAttribute="bottom" constant="4" id="ywb-E5-VAY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImage" destination="OwP-IN-CMI" id="XmC-CA-zOa"/>
+                <outlet property="monthSale" destination="9UK-37-Hsk" id="hA8-6a-XFE"/>
+                <outlet property="nameLabel" destination="M2N-Rg-qXU" id="Xgg-mR-mbt"/>
+                <outlet property="priceLabel" destination="5fm-bR-v64" id="GSs-jA-1no"/>
+                <outlet property="rightCountView" destination="ZPk-LA-VmH" id="ACH-bk-rpg"/>
+                <outlet property="xiaoshouImagV" destination="PXO-vS-H9f" id="uR9-VN-0Ra"/>
+                <outlet property="zanLabel" destination="UwQ-Yg-gMk" id="boE-uj-zXl"/>
+            </connections>
+            <point key="canvasLocation" x="159" y="160"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gesture_node_error" width="74" height="74"/>
+        <image name="icon_food_decrease_small" width="27" height="27"/>
+        <image name="icon_food_decrease_small_white_bg" width="27" height="27"/>
+        <image name="icon_food_increase_small" width="27" height="27"/>
+        <image name="icon_food_increase_small_highlighted" width="27" height="27"/>
+        <image name="icon_food_review_praise" width="11" height="11"/>
+    </resources>
+</document>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QDU-nY-RmX">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Mt4-Wl-3y0">
+            <objects>
+                <viewController id="QDU-nY-RmX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9so-r1-KHP"/>
+                        <viewControllerLayoutGuide type="bottom" id="HQv-Nv-DF4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YXd-FG-Jsu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone-6-Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="IOX-D4-U1u"/>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="IOX-D4-U1u" firstAttribute="top" secondItem="9so-r1-KHP" secondAttribute="bottom" id="5gh-ke-TRU"/>
+                            <constraint firstItem="HQv-Nv-DF4" firstAttribute="top" secondItem="IOX-D4-U1u" secondAttribute="bottom" id="Q4B-ml-GoW"/>
+                            <constraint firstItem="IOX-D4-U1u" firstAttribute="leading" secondItem="YXd-FG-Jsu" secondAttribute="leading" id="uxL-Ra-Nnl"/>
+                            <constraint firstAttribute="trailing" secondItem="IOX-D4-U1u" secondAttribute="trailing" id="y7W-jW-03K"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pci-bc-bqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="111"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iPhone-6-Wallpaper" width="750" height="1334"/>
+    </resources>
+</document>
