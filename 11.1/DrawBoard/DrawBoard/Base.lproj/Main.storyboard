@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PRd-Xf-uMw" userLabel="PaintView" customClass="PaintView">
+                                <rect key="frame" x="0.0" y="-133" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="W68-ha-ve6">
+                                <rect key="frame" x="-2" y="534" width="379" height="31"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="RuG-UP-qjh"/>
+                                </connections>
+                            </slider>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PlH-LL-XDq">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" id="uCf-qC-e2B">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sVA-Bp-Djy">
+                                            <rect key="frame" x="16" y="7" width="46" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="1" green="0.26794184560000001" blue="0.21290239050000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="colorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JPi-tP-q5z"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="BJk-me-9Tg"/>
+                                    <barButtonItem style="plain" id="BH8-ID-Jo7">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KX7-hu-6De">
+                                            <rect key="frame" x="75" y="7" width="46" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.20372077822685242" green="0.84641826152801514" blue="0.12064141780138016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="colorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cAK-rP-hxo"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="MRL-Mq-TPU"/>
+                                    <barButtonItem style="plain" id="nmU-Jn-ycj">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PjZ-Yt-MxB">
+                                            <rect key="frame" x="135" y="7" width="46" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.0557885906" green="0.2211619128" blue="0.26578229869999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="colorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QzF-hK-c28"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Qga-37-pmr"/>
+                                    <barButtonItem style="plain" id="2ib-wJ-vsd">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Tyt-s8-LwF">
+                                            <rect key="frame" x="194" y="7" width="46" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="colorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4gK-2e-oMF"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="WZz-QX-dbp"/>
+                                    <barButtonItem style="plain" id="seW-ho-xC5">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EJ5-eJ-nQY">
+                                            <rect key="frame" x="254" y="7" width="46" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.2666666667" green="0.87450980389999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="colorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rml-kt-bpc"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="tga-UX-USb"/>
+                                    <barButtonItem style="plain" id="crY-9c-edi">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5BY-xP-GKl">
+                                            <rect key="frame" x="313" y="7" width="46" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <connections>
+                                                <action selector="colorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RxF-b2-TTX"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqF-9G-47s">
+                                <rect key="frame" x="338" y="572" width="30" height="30"/>
+                                <state key="normal" title="保存"/>
+                                <connections>
+                                    <action selector="savePictureButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fcS-h4-oa9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W68-ha-ve6" firstAttribute="top" secondItem="PRd-Xf-uMw" secondAttribute="bottom" id="2Ug-4S-qC0"/>
+                            <constraint firstAttribute="trailing" secondItem="wqF-9G-47s" secondAttribute="trailing" constant="7" id="Bmk-Vz-YdT"/>
+                            <constraint firstItem="PRd-Xf-uMw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.6" id="CNv-o4-0iU"/>
+                            <constraint firstItem="W68-ha-ve6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="M6q-kE-KOY"/>
+                            <constraint firstItem="PRd-Xf-uMw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="MMI-36-PpE"/>
+                            <constraint firstItem="PRd-Xf-uMw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MoP-5l-YSp"/>
+                            <constraint firstItem="wqF-9G-47s" firstAttribute="top" secondItem="W68-ha-ve6" secondAttribute="bottom" constant="8" id="V6U-YX-LRD"/>
+                            <constraint firstItem="PRd-Xf-uMw" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="hbg-uf-f96"/>
+                            <constraint firstAttribute="trailing" secondItem="W68-ha-ve6" secondAttribute="trailing" id="rXF-Jg-ZiD"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="paintView" destination="PRd-Xf-uMw" id="C8j-Tf-Xca"/>
+                        <outlet property="slider" destination="W68-ha-ve6" id="jcZ-94-6mi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="193.5" y="267.5"/>
+        </scene>
+    </scenes>
+</document>
